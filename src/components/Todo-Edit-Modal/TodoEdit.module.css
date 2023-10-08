@@ -1,0 +1,76 @@
+.modal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: rgb(102, 250, 255);
+    border: 1px solid;
+    margin: 1rem;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.modal p{
+    background-color: rgb(38, 47, 77);
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 5px;
+}
+.text{
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: Georgia;
+    font-size: 1.7rem;
+    padding: .5rem;
+    border-radius: 5px;
+}
+.btnContainer{
+    display: flex;
+   /* width: 150px; */
+    
+}
+
+
+.btn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    font-size: 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin: .1rem;
+    transition: all .1s ease-in-out;
+    animation-iteration-count: 2;
+    animation-duration: .13s;
+    animation-timing-function: ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.14);
+    
+    animation-name: animate ;
+   
+}
+
+@keyframes animate {
+    0% {transform: scale(1.14) rotatez(-10deg);}
+    50% {transform:scale(1.14) rotatez(20deg);}
+    100% {transform:scale(1.14) rotatez(-10deg);}
+}
+
+.btnClose{
+    background-color: rgb(71, 1, 1);
+    color: rgb(238, 56, 56);
+}
+.btnTrue{
+    color: rgb(102, 250, 255);
+    background-color: rgb(0, 65, 95);
+}
+.btnContainer{
+    margin: 1rem;
+    /* background-color: aliceblue; */
+}

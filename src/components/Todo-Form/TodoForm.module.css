@@ -1,0 +1,61 @@
+.form{
+    font-family: Cambria, Cochin, Georgia;
+    margin: 1rem;
+    /* background-color: rgb(40, 66, 95); */
+    border: 2px solid rgb(0, 210, 247);
+    width: 500px;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(102, 250, 255);
+    align-items: center;
+}
+
+.form p{
+    /* background-color: rgb(49, 54, 70); */
+    border: 1px solid rgb(0, 210, 247);
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.input{
+    border: none;
+    outline: none;
+    padding: .5rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin: .5rem;
+}
+
+.btn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    font-size: 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin: .1rem;
+    transition: all .1s ease-in-out;
+    animation-iteration-count: 2;
+    animation-duration: .13s;
+    animation-timing-function: ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.14);
+    
+    animation-name: animate ;
+   
+}
+
+@keyframes animate {
+    0% {transform: scale(1.14) rotatez(-10deg);}
+    50% {transform:scale(1.14) rotatez(20deg);}
+    100% {transform:scale(1.14) rotatez(-10deg);}
+}
